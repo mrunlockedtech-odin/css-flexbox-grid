@@ -75,11 +75,11 @@ main {
 }
 
 #contact>p:first-child {
-  background-color: lightgreen;
+  background-color: #66D287;
 }
 
 #contact>p:last-child {
-  background-color: rgb(107, 172, 107);
+  background-color: #58BD7E;
 }
 
 #contact p {
