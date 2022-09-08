@@ -3,9 +3,12 @@ html {
 }
 
 /* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
-*::after { /* All ::after pseudo-elements */
+*,
+/* All elements*/
+*::before,
+/* All ::before pseudo-elements */
+*::after {
+  /* All ::after pseudo-elements */
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
   box-sizing: inherit;
@@ -19,7 +22,7 @@ html {
 
 body {
   background-color: gray;
-/* Use a system font, if none are available use an available sans-sarif   font */
+  /* Use a system font, if none are available use an available sans-sarif   font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
@@ -28,46 +31,57 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
 img {
   border-radius: 50%;
   width: 125px;
   border: 3px solid rgb(98, 216, 98);
 }
+
 main {
   background-color: white;
   text-align: center;
   font-size: 12pt;
 }
+
 #status {
   text-align: right;
   margin: 10px 10px 0px 0px;
   color: rgb(98, 216, 98);
   font-size: 11px;
 }
+
 #name {
   margin: 10px;
   font-size: 24px;
 }
+
 #occupation {
   background-color: lightgray;
   padding: 5px 60px;
 }
+
 #brand {
   display: none;
 }
+
 #occupation p {
   margin: 10px;
 }
+
 #contact {
   display: flex;
   grid-template-columns: 50% 50%;
 }
-#contact > p:first-child {
+
+#contact>p:first-child {
   background-color: lightgreen;
 }
-#contact > p:last-child{
-  background-color: green;
+
+#contact>p:last-child {
+  background-color: rgb(107, 172, 107);
 }
+
 #contact p {
   display: grid;
   align-items: center;
@@ -76,18 +90,20 @@ main {
   height: 50px;
   margin: 0%;
 }
+
 #offer p {
   margin: 5px;
 
 }
+
 #offer {
   padding: 20px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   body {
     background-color: gray;
-  /* Use a system font, if none are available use an available sans-sarif   font */
+    /* Use a system font, if none are available use an available sans-sarif   font */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     margin: 0;
@@ -96,24 +112,32 @@ main {
     justify-content: center; */
     min-width: 100vh;
   }
-  #name, #occupation, #brand, #offer{
+
+  #name,
+  #occupation,
+  #brand,
+  #offer {
     background-color: rgba(201, 192, 192, 0.401);
   }
+
   main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     text-align: left;
   }
-  #offer{
+
+  #offer {
     grid-area: 4/4/5/5;
     padding: 0px 20px 5px 20px;
     font-size: 11pt;
   }
-  #occupation{
+
+  #occupation {
     grid-area: 2/4/3/5;
     padding: 0 20px;
   }
+
   #brand {
     display: flex;
     inline-size: 340px;
@@ -121,22 +145,27 @@ main {
     overflow-wrap: break-word;
     grid-area: 3/4/4/5;
   }
+
   #contact {
     grid-area: 4/1/5/2;
   }
+
   main img {
     grid-area: 2/1/4/2;
     margin: 0 30px 40px 30px;
   }
+
   #name {
     padding: 10px 20px 0px 20px;
     grid-area: 1/4/2/5;
     margin: 0;
   }
+
   #status {
     text-align: left;
     margin: 10px 10px;
   }
+
   #brand p {
     margin: 10px 20px;
     border-left: 3px solid rgb(98, 216, 98);
@@ -144,13 +173,17 @@ main {
     color: gray;
     font-size: 13pt;
   }
-  #occupation > p:first-child{
+
+  #occupation>p:first-child {
     margin: auto auto 5px auto;
   }
-  #occupation > p:last-child{
+
+  #occupation>p:last-child {
     margin: 5px auto auto auto
   }
-  #contact > p {
-    height: 55px;
+
+  #contact>p {
+    margin-top: 10px;
+    height: 45px;
   }
 }
