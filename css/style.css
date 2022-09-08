@@ -142,6 +142,7 @@ main {
     border-left: 3px solid rgb(98, 216, 98);
     padding-left: 10px;
     color: gray;
+    font-size: 13pt;
   }
   #occupation > p:first-child{
     margin: auto auto 5px auto;
@@ -149,7 +150,7 @@ main {
   #occupation > p:last-child{
     margin: 5px auto auto auto
   }
-  contact p {
-    padding
+  #contact > p {
+    height: 55px;
   }
 }
